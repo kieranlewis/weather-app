@@ -2,6 +2,9 @@ import "@babel/polyfill";
 import "./styles.css";
 import * as Data from './modules/data';
 
-console.log("hello world!");
+async function printWeather() {
+    const json = await Data.getJson('Wellington');
+    console.log(json.weather);
+}
 
-Data.getJson('Wellington');
+printWeather();
