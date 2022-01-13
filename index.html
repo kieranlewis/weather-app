@@ -5,14 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
-    <script src="bundle.js"></script>
+    <script src="bundle.js" defer></script>
 </head>
 <body>
     <div id="app">
         <div class="form-div">
             <form>
                 <label for="city-input">City</label>
-                <input type="text" id="city-input" required>
+                <input type="text" id="city-input" name="city" required>
                 <button class="submit-btn">Submit</button>
             </form>
         </div>
