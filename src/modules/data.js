@@ -6,4 +6,10 @@ async function getJson(city) {
     return json;
 }
 
-export { getJson };
+async function processJson(city) {
+    const json = await getJson(city);
+    const weather = json.weather;
+    return weather;
+}
+
+export { getJson, processJson };
