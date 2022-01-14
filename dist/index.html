@@ -8,14 +8,26 @@
     <script src="bundle.js" defer></script>
 </head>
 <body>
-    <div id="app">
-        <div class="form-div">
-            <form>
-                <label for="city-input">City</label>
-                <input type="text" id="city-input" name="city" required>
-                <button class="submit-btn">Submit</button>
-            </form>
+    <div class="navbar">
+        <div class="navbar-item">
+            <h2>Weather App</h2>
         </div>
+        <div class="navbar-item">
+            <div class="form-div">
+                <form>
+                    <label for="city-input">City</label>
+                    <input type="text" id="city-input" name="city" required>
+                    <button class="submit-btn">Submit</button>
+                </form>
+            </div>
+        </div>
+        <div class="navbar-item">
+            <button class="degree-btn">C</button>
+            <button class="degree-btn">F</button>
+        </div>
+    </div>
+    <div id="app">
+        
         <div class="weather-div">
             
         </div>

@@ -6,10 +6,6 @@ import * as UI from './modules/ui';
 const formButton = document.querySelector('.submit-btn');
 const form = document.forms[0];
 
-async function main() {
-
-}
-
 async function printWeather(city) {
     try {
         const weather = await Data.processJson(city);
