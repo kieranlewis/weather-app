@@ -1,13 +1,14 @@
 * {
     margin: 0;
     padding: 0;
-    background-color: rgb(51, 153, 255);
+    font-family: 'Poppins', sans-serif;
 }
 
 .navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background-color: #091540;
 }
 
 .navbar-item {
@@ -16,14 +17,38 @@
 }
 
 .navbar-item h2 {
-    color: white;
+    color: #EBEFFF;
 }
 
-.degree-btn {
+form {
+    color: #EBEFFF;
+}
 
+button {
+    background-color: #3D518C;
+    border: none;
+    color: #EBEFFF;
+    padding: 0px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+input {
+    width: 60%;
+    background-color: #EBEFFF;
+    border: none;
 }
 
 h1 {
-    color: white;
+    color: #EBEFFF;
     background-color: black;
+}
+
+.weather-div {
+    background-color: #ABD2FA;
+    height: 1000px;
 }
