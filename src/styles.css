@@ -9,6 +9,7 @@
     align-items: center;
     justify-content: space-between;
     background-color: #091540;
+    height: 5vh;
 }
 
 .navbar-item {
@@ -49,6 +50,15 @@ h1 {
 }
 
 .weather-div {
-    background-color: #ABD2FA;
-    height: 1000px;
+    border: 1px solid black;
+    background-color: #168aff;
+    color: #EBEFFF;
+    height: 95vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.degree-btn-list {
+    text-align: right;
 }
