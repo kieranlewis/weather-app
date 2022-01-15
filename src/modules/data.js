@@ -16,7 +16,7 @@ async function processJson(city) {
         const weather = {
             city: city,
             weather: json.weather[0].main,
-            temp: json.main.temp
+            temp: Math.floor(json.main.temp)
         }
 
         return weather;
