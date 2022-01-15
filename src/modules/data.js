@@ -18,8 +18,7 @@ async function processJson(city) {
             weather: json.weather[0].main,
             temp: json.main.temp
         }
-        console.log('weather:', weather);
-        console.log('json: ', json);
+
         return weather;
     } catch(error) {
         console.log(error);

@@ -56,6 +56,7 @@ h1 {
     color: #EBEFFF;
     height: 95vh;
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
 }
