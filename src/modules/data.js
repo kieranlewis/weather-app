@@ -13,8 +13,13 @@ async function getJson(city) {
 async function processJson(city) {
     try {
         const json = await getJson(city);
-        const weather = json.weather;
+        const weather = {
+            city: city,
+            weather: json.weather[0].main,
+            temp: json.main.temp
+        }
         console.log('weather:', weather);
+        console.log('json: ', json);
         return weather;
     } catch(error) {
         console.log(error);
