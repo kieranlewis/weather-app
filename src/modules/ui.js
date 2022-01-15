@@ -11,7 +11,7 @@ function displayWeather(weather) {
 
     cityLi.innerText = weather['city'];
     weatherLi.innerText = weather['weather'];
-    iconLi.innerText = 'N/A';
+    iconLi.innerHTML = `<img src="${weather['iconUrl']}">`;
     tempLi.innerText = weather['temp'];
 
     cityLi.classList.add('first');
@@ -24,5 +24,7 @@ function displayWeather(weather) {
     weatherUl.appendChild(iconLi)
     weatherUl.appendChild(tempLi);
 }
+
+
 
 export { displayWeather };

@@ -13,12 +13,16 @@ async function getJson(city) {
 async function processJson(city) {
     try {
         const json = await getJson(city);
+        const iconUrl = `http://openweathermap.org/img/wn/${json.weather[0].icon}@4x.png`;
+
         const weather = {
-            city: city,
+            city,
             weather: json.weather[0].main,
+            iconUrl,
             temp: Math.floor(json.main.temp)
         }
 
+        console.log(weather);
         return weather;
     } catch(error) {
         console.log(error);
