@@ -34,8 +34,14 @@ function displayWeather(weather) {
 }
 
 function changeConversion(conversionString) {
-    console.log('you are trting to change the temp to', conversionString);
-    conversion = conversionString;
+    const celsiusButton = document.querySelector('.celsius-btn');
+    const farenheitButton = document.querySelector('.farenheit-btn');
+
+    if(conversionString != conversion) {
+        conversion = conversionString;
+        celsiusButton.classList.toggle('clicked');
+        farenheitButton.classList.toggle('clicked')
+    }
 }
 
 

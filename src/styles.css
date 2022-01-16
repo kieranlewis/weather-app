@@ -76,3 +76,8 @@ h1 {
 .degree-btn-list {
     text-align: right;
 }
+
+.clicked {
+    background-color: #EBEFFF;
+    color: #3D518C;
+}
