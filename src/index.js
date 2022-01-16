@@ -26,5 +26,8 @@ formButton.addEventListener('click', (e) => {
     form.reset();
 });
 
+celsiusButton.addEventListener('click', () => UI.changeConversion('celsius'));
+farenheitButton.addEventListener('click', () => UI.changeConversion('farenheit'));
+
 export { printWeather };
 

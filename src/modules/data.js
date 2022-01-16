@@ -21,7 +21,8 @@ async function processJson(city) {
             city: json.name,
             weather: json.weather[0].main,
             iconUrl,
-            temp: Math.floor(json.main.temp)
+            temp: Math.floor(json.main.temp),
+            conversion: 'celsius'
         }
         
         return weather;
@@ -32,12 +33,12 @@ async function processJson(city) {
 
 function cToF(celsius) {
     let farenheit = celsius * 9 / 5 + 32;
-    return farenheit;
+    return Math.floor(farenheit);
 }
 
 function fToC(farenheit) {
     let celsius = (farenheit - 32) * 5 / 9;
-    return celsius;
+    return Math.floor(celsius);
 }
 
 export { getJson, processJson, cToF, fToC };
