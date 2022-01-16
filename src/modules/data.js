@@ -14,15 +14,12 @@ async function processJson(city) {
     try {
         const json = await getJson(city);
         const iconUrl = `http://openweathermap.org/img/wn/${json.weather[0].icon}@4x.png`;
-        console.log(iconUrl);
-        console.log(json);
 
         const weather = {
             city: json.name,
             weather: json.weather[0].main,
             iconUrl,
-            temp: Math.floor(json.main.temp),
-            conversion: 'celsius'
+            temp: Math.floor(json.main.temp)
         }
         
         return weather;
@@ -41,4 +38,4 @@ function fToC(farenheit) {
     return Math.floor(celsius);
 }
 
-export { getJson, processJson, cToF, fToC };
+export { processJson, cToF, fToC };
