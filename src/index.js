@@ -6,6 +6,9 @@ import * as UI from './modules/ui';
 const formButton = document.querySelector('.submit-btn');
 const form = document.forms[0];
 
+const celsiusButton = document.querySelector('.celsius-btn');
+const farenheitButton = document.querySelector('.farenheit-btn');
+
 async function printWeather(city) {
     try {
         const weather = await Data.processJson(city);
